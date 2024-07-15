@@ -1,1 +1,4 @@
-python3 server.py & python -m SHUKLA
+set -e
+export FLASK_APP=kex:create_app
+gunicorn -w 4 -b 0.0.0.0:${PORT:-8080} kex:create_app &
+python3 -m SHUKLA
