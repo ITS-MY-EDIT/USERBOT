@@ -7,11 +7,11 @@ CLIENTS = []
 for i,SESSION in enumerate(SESSIONS):
     if SESSION:
         client = Client(
-            name=f"STORM{i}",
+            name=f"SHUKLA{i}",
             session_string=SESSION,
             api_id=API_ID,
             api_hash=API_HASH,
-            plugins=dict(root="STORM.modules"),
+            plugins=dict(root="SHUKLA.modules"),
         )
         CLIENTS.append(client)
 
@@ -21,9 +21,9 @@ if __name__ == "__main__":
     for i, CLIENT in enumerate(CLIENTS):
         try:
             CLIENT.start()
-            CLIENT.join_chat("STORM_CHATZ")
-            CLIENT.join_chat("STORM_TECHH")
-            CLIENT.join_chat("TORNADO_TRIBE")
+            CLIENT.join_chat("ALL_SANATANI_BOT")
+            CLIENT.join_chat("SANATANI_TECH")
+            CLIENT.join_chat("II_SANATANI_II")
             print(f"ꜱᴛᴏʀᴍ ꜱᴛᴀʀᴛᴇᴅ ᴀꜱ{i+1}")
             print(f"ʙᴏᴏᴛᴇᴅ/ꜱᴛᴀʀᴛᴇᴅ {CLIENT.me.first_name} 🎉")
         except Exception as e:
