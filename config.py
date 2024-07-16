@@ -1,5 +1,5 @@
 from os import getenv
-from STORMDB.data import STORMS
+from SHUKLA.modules.SHASHANK.data import VERIFIED_USERS
 from dotenv import load_dotenv
 
 API_ID = int(getenv("API_ID", "25981592"))
